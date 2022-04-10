@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Libook</title>
+    <meta charset="utf-8" />
+    <script src="client.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<h2>Welcome to the Libook</h2>
+<div class="menu">
+    <button onclick="addBook()">Add Book</button>
+    <button onclick="addClient()">Add Client</button>
+    <button onclick="takeBook()">Take Book</button>
+    <button onclick="returnBook()">Return Book</button>
+    <button onclick="deleteBook()">Delete Book</button>
+    <button onclick="deleteClient()">Delete Client</button>
+</div>
+<div class="addBook">
+    <h1>Add New Book</h1>
+    <div>
+        <form action="/addBook" method="post">
+            <ul>
+                <li>
+                    <label>Book name</label><br />
+                    <input type="text" name="name" id="bookName" /><br /><br />
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <label>Book author</label><br />
+                    <input type="text" name="author" id="bookAuthor" /><br /><br />
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <label>Year</label><br />
+                    <input type="number" name="year" id="year" /><br /><br />
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <label>Genre</label><br />
+                    <input type="text" name="genre" id="bookGenre" /><br /><br />
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <button type="button" id="addBookButton">Add the book</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+</div>
+<div class="addClient">
+    <h1>Add New Client</h1>
+    <form action="/addClient" method="post">
+        <ul>
+            <li>
+                <label>Client name</label><br />
+                <input type="text" name="firstName" id="name" /><br /><br />
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <label>Client surname</label><br />
+                <input type="text" name="lastName" id="surname" /><br /><br />
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <label>Birth date</label><br />
+                <input type="date" name="birthDate" id="birthDate" /><br /><br /><br />
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <button type="button" id="addClientButton">Add the client</button>
+            </li>
+        </ul>
+    </form>
+</div>
+<div class="takeBook">
+    <h1>Take Any Book</h1>
+    <form action="/takeBook" method="post">
+        <ul>
+            <li>
+                <label>Client name</label><br />
+                <input type="text" name="firstName" id="clientName" /><br /><br
+            />
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <label>Client surname</label><br />
+                <input type="text" name="lastName" id="clientSurname" /><br /><br />
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <label>Book name</label><br />
+                <input type="text" name="bookName" id="bookNameTake" /><br /><br />
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <button type="button" id="takeBookButton">Take the book</button>
+            </li>
+        </ul>
+    </form>
+</div>
+<div class="returnBook">
+    <h1>Return The Book</h1>
+    <form action="/returnBook" method="get">
+        <ul>
+            <li>
+                <label>Book name</label><br />
+                <input type="text" name="name" id="bookNameReturn" /><br /><br />
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <button type="button" id="returnBookButton">Return the book</button>
+            </li>
+        </ul>
+    </form>
+</div>
+<div class="deleteBook">
+    <h1>Delete Any Book</h1>
+    <form action="/deleteBook" method="get">
+        <ul>
+            <li>
+                <label>Book name</label><br />
+                <input type="text" name="name" id="bookNameDelete" /><br /><br />
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <button type="button" id="deleteBookButton">Delete the book</button>
+            </li>
+        </ul>
+    </form>
+</div>
+<div class="deleteClient">
+    <h1>Delete Any Client</h1>
+    <form action="/deleteClient" method="get">
+        <ul>
+            <li>
+                <label>Client Name</label><br />
+                <input type="text" name="name" id="clientNameDelete" /><br /><br />
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <button type="button" id="deleteClientButton">Delete the client</button>
+            </li>
+        </ul>
+    </form>
+</div>
+</body>
+</html>

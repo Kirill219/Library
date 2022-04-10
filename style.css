@@ -1,0 +1,190 @@
+body {
+    background: url('bg_main.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+h2 {
+    color: bisque;
+    font-family: "Goudy Old Style";
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h1 {
+    color: bisque;
+    font-family: "Goudy Old Style";
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+
+label {
+    color: bisque;
+    font-family: "Goudy Old Style";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input {
+    border-radius: 8px;
+    border-style: solid;
+    border-color: saddlebrown;
+    width: 160px;
+}
+
+button {
+    margin: 10px;
+    background-color: sandybrown;
+    border-color: saddlebrown;
+    padding: 7px;
+    border-radius: 8px;
+    border-style: solid;
+    font-family: "Goudy Old Style";
+}
+
+button:hover {
+    background: bisque;
+}
+
+button:active {
+    background: saddlebrown;
+}
+
+.menu {
+    background: url('bg.jpg');
+    border-color: brown;
+    padding: 12px;
+    border-radius: 25px;
+    border-style: solid;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.addBook {
+    display: none;
+    background: url('bg.jpg');
+    border-color: brown;
+    padding: 30px;
+    border-radius: 25px;
+    border-style: solid;
+    align-items: center;
+    justify-content: center;
+    height: 365px;
+}
+
+.addClient {
+    display: none;
+    background: url('bg.jpg');
+    border-color: brown;
+    padding: 5px;
+    border-radius: 25px;
+    border-style: solid;
+    align-items: center;
+    justify-content: center;
+    height: 345px;
+}
+
+.takeBook {
+    display: none;
+    background: url('bg.jpg');
+    border-color: brown;
+    padding: 5px;
+    border-radius: 25px;
+    border-style: solid;
+    align-items: center;
+    justify-content: center;
+    height: 325px;
+}
+
+.returnBook {
+    display: none;
+    background: url('bg.jpg');
+    border-color: brown;
+    padding: 10px;
+    border-radius: 25px;
+    border-style: solid;
+    align-items: center;
+    justify-content: center;
+    height: 190px;
+}
+
+.deleteBook {
+    display: none;
+    background: url('bg.jpg');
+    border-color: brown;
+    padding: 10px;
+    border-radius: 25px;
+    border-style: solid;
+    align-items: center;
+    justify-content: center;
+    height: 190px;
+}
+
+.deleteClient {
+    display: none;
+    background: url('bg.jpg');
+    border-color: brown;
+    padding: 10px;
+    border-radius: 25px;
+    border-style: solid;
+    align-items: center;
+    justify-content: center;
+    height: 190px;
+}
+
+ul, li label{
+    list-style-type: none;
+    margin-right: 140px;
+}
+
+ul, li input{
+    list-style-type: none;
+    margin: 0;
+}
+
+ul, li button{
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+.addBook ul li button{
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.addClient ul li button{
+    list-style-type: none;
+    margin-left: 60px;
+}
+
+.addClient ul li input{
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+.addClient ul li label{
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+.takeBook ul li button{
+    list-style-type: none;
+    margin-left: 60px;
+}
+
+.takeBook ul li input{
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+.takeBook ul li label{
+    list-style-type: none;
+    margin-left: 30px;
+}
+
